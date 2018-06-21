@@ -1,81 +1,62 @@
 <!Doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Crystals Collector</title>
   </head>
   
   <body>
         <!--This container is for the total contents of the game-->
-        <div class="container">
+        <div class="gameCont">
+
             <!--this card is for the header title-->
             <div class="card">
                 <div class="card-body">
                     <h1>Crystals Collector!</h1>
                 </div>
             </div>
+            
             <!--this card is for the directions-->
-            <div class="card">
-                <div class="card-body">
+            <div class="dirCont">
                     <h2>Directions:</h2>
                     <p class="directions">You will be given a random number at the start of the game.</p>
                     <p class="directions">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
                     <p class="directions">You win the game by matching your total score to random numbers, you lose the game if your total score goes above the random number.</p>
                     <p class="directions">The value of each crystal is hidden from you until you click on it.</p>
                     <p class="directions">Each time when the game starts, the game will change the values of each crystal.</p>
-                </div>
             </div>
+
             <!--this card is for the Number to beat-->
-            <div class="card">
-                <div class="card-body">
-                    <h2>The Magic Number</h2>
-                </div>
+            <div class="numberCont">
+                    <h2 id="magicNumber">The Magic Number</h2>
             </div>
+
             <!--this card is for the wins and losses counters-->
-            <div class="card">
-                <div class="card-body">
+            <div class="scoreCard">
                     <h4>Wins:</h4>
                     <h4>Losses:</h4>
-                </div>
             </div>
 
             <!--this card is for the game buttons-->
-            <div class="card">
-                <div class="card-body">
-                    <button type="button" class="btn btn-primary">diamond</button>
-                    <button type="button" class="btn btn-primary">emerald</button>
-                    <button type="button" class="btn btn-primary">topaz</button>
-                    <button type="button" class="btn btn-primary">ruby</button>
-                </div>
+            <div class="buttonCont">
+                    <img class="crysButt" id="crystal1" src="assets/images/blu.png" alt="Blue Crystal">
+                    <img class="crysButt" id="crystal2" src="assets/images/emerald.png" alt="Green Crystal">
+                    <img class="crysButt" id="crystal3" src="assets/images/ruby.png" alt= "Red Crystal">
+                    <img class="crysButt" id="crystal4" src="assets/images/violet.png" alt="Blue Crystal">
             </div>
             
             <!--This card is for the user's total score-->
-            <div class="card">
-                <div class="card-body">
+            <div class="totalScore">
                     <h4>Your total score is:</h4>
-                </div>
             </div>
 
             <!--this card is to display the user's score-->
-            <div class="card">
-                <div class="card-body">
-                    0
-                </div>
+            <div class="userScore">
             </div>
 
         </div>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  
     </body>
 
 </html>
