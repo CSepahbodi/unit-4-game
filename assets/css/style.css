@@ -16,15 +16,15 @@ body {
 .theDome {
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
-    color: purple;
+    color: goldenrod;
 	font-size: 75px;
 	padding: 10px 0px 0px 0px;
 }
 
 .dirCont {
     width: 400px;
-	background-color: purple;
-	color: #DDCEEE;
+	background-color: orangered;
+	color: ;
 	padding: 10px;
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -44,7 +44,7 @@ body {
 .numberCont {
     width: 150px;
 	height: 70px;
-	background-color: purple;
+	background-color: burlywood;
 	margin-bottom: 10px;
 	font-size: 25px;
 	text-align: center;
@@ -55,7 +55,7 @@ body {
 .scoreCard {
     width: 150px;
 	height: 70px;
-    background-color: purple;
+    background-color: burlywood;
     font-size: 25px;
 	margin-left: 160px;
 	padding-top: 6px;
@@ -73,7 +73,7 @@ img {
 
 #userScore {
     width: 150px;
-    background-color: purple;
+    background-color: burlywood;
     height: 70px;
     font-size: 35px;
     text-align: center;
@@ -82,7 +82,8 @@ img {
 
 #totScore {
     width: 150px;
-    background-color: purple;
+    font-size: 25px;
+    background-color: burlywood;
     margin: 10px 0px;
     padding: 5px 0px 5px 5px;
 }
