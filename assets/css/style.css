@@ -53,11 +53,36 @@ body {
 }
 
 .scoreCard {
-    width: 80px;
-	height: 84px;
-	background-color: purple;
+    width: 150px;
+	height: 70px;
+    background-color: purple;
+    font-size: 25px;
 	margin-left: 160px;
 	padding-top: 6px;
 	padding-left: 10px;
 }
 
+img {
+    width: 300px;
+    margin-right: 6px;
+}
+
+#buttonCont {
+    clear: both;
+}
+
+#userScore {
+    width: 150px;
+    background-color: purple;
+    height: 70px;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#totScore {
+    width: 150px;
+    background-color: purple;
+    margin: 10px 0px;
+    padding: 5px 0px 5px 5px;
+}
