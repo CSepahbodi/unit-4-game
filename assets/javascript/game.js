@@ -7,10 +7,10 @@ var totalScore = 0;
 var num = [1,2,3,4,5,6,7,8,9,10,11,12];
 var crystals = [];
 var blue;
+var green;
 var red;
-var white;
-var yellow;
-var crystalValue;
+var purple;
+var buttonValue;
 
 //the magic number that the user needs to match
 magicNumber = Math.floor((Math.random() * 100) + 19);
@@ -43,21 +43,23 @@ console.log(crystals, blue, green, red, purple);
 
 //when user clicks on each button then a number will be added to the user's total score.
 $('.crysButt').on('click', function() {
-    crystalValue = $(this).attr('data-value');
+    buttonValue = $(this).attr('data-value');
 
-    totalScore = totalScore + parseInt(crystalValue);
+    totalScore = totalScore + parseInt(buttonValue);
     $('#userScore').text(totalScore);
 
     if (totalScore == magicNumber) {
         wins++;
         $('#win').text("Wins: "+ wins);
         alert ("You Win!");
+
         reset();
 
     }else if (totalScore > magicNumber) {
         losses++;
         $('#loss').text("Losses: " + losses);
         alert("You Lose!");
+
         reset();
     }
 });

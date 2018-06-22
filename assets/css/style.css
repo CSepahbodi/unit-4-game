@@ -53,9 +53,9 @@ body {
 }
 
 .scoreCard {
-    width: 150px;
-	height: 70px;
-    font-size: 25px;
+    width: 80px;
+	height: 84px;
+    background-color: burlywood
 	margin-left: 160px;
 	padding-top: 6px;
     padding-left: 10px;
