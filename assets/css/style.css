@@ -23,7 +23,7 @@ body {
 
 .dirCont {
     width: 400px;
-	background-color: orangered;
+	background-color: black;
 	color: ;
 	padding: 10px;
 	margin-top: 20px;
@@ -79,7 +79,7 @@ img {
 }
 
 #totScore {
-    width: 150px;
+    width: 300px;
     font-size: 50px;
     margin: 10px 0px;
     padding: 5px 0px 5px 5px;
