@@ -58,7 +58,7 @@ body {
     font-size: 25px;
 	margin-left: 160px;
 	padding-top: 6px;
-	padding-left: 10px;
+    padding-left: 10px;
 }
 
 img {
@@ -87,6 +87,8 @@ img {
 
 #magicNumber {
     font-size: 50px;
+    background-color: black;
+    width: 83px;
     color: white;
     margin: 10px 0px;
     padding: 5px 0px 5px 5px;

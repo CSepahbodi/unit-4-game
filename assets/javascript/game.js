@@ -21,7 +21,7 @@ $('#userScore').text(totalScore);
 $('#wins').text('Wins: '+ wins);
 $('#losses').text('Losses: ' + losses);
 
-//create the function that assigns a number for the crystals
+//create the function that assigns a number for each of the crystals
 function numCrystals() {
 crystals = num.sort(function(a, b){return 0.5 - Math.random()});
 
@@ -50,13 +50,13 @@ $('.crysButt').on('click', function() {
 
     if (totalScore == magicNumber) {
         wins++;
-        $('#wins').text('Wins: '+ wins);
+        $('#win').text("Wins: "+ wins);
         alert ("You Win!");
         reset();
 
     }else if (totalScore > magicNumber) {
         losses++;
-        $('#losses').text('Losses: ' + losses);
+        $('#loss').text("Losses: " + losses);
         alert("You Lose!");
         reset();
     }
