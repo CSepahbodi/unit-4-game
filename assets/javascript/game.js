@@ -1,6 +1,6 @@
 //variables for the game
 
-var magicNum = "";
+var magicNumber = "";
 var wins = 0;
 var losses = 0;
 var totalScore = 0;
@@ -13,10 +13,10 @@ var yellow;
 var crystalValue;
 
 //the magic number that the user needs to match
-magicNum = Math.floor((Math.random() * 100) + 19);
+magicNumber = Math.floor((Math.random() * 100) + 19);
 
 //numbers, wins and losses...
-$('#magicNum').text(randomNum);
+$('#magicNumber').text(magicNumber);
 $('#userScore').text(totalScore);
 $('#wins').text('Wins: '+ wins);
 $('#losses').text('Losses: ' + losses);
@@ -40,3 +40,24 @@ $('#crystal4').attr('data-value', purple);
 numCrystals();
 //values associated with each crystal...
 console.log(crystals, blue, green, red, purple);
+
+//when user clicks on each button then a number will be added to the user's total score.
+$('.crysButt').on('click', function() {
+    crystalValue = $(this).attr('data-value');
+
+    totalScore = totalScore + parseInt(crystalValue);
+    $('#userScore').text(totalScore);
+
+    if (totalScore == randomNum) {
+        wins++;
+        $('#wins').text('Wins: '+ wins);
+        alert("You Win!");
+        reset();
+
+    }else if (totalScore > randomNum) {
+        losses++;
+        $('#losses').text('Losses: ' + losses);
+        alert("You Lose!");
+        reset();
+    }
+});

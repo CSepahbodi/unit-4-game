@@ -87,3 +87,11 @@ img {
     margin: 10px 0px;
     padding: 5px 0px 5px 5px;
 }
+
+#magicNumber {
+    font-size: 35px;
+    color: white;
+    background-color: burlywood
+    margin: 10px 0px;
+    padding: 5px 0px 5px 5px;
+}
