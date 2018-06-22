@@ -48,16 +48,26 @@ $('.crysButt').on('click', function() {
     totalScore = totalScore + parseInt(crystalValue);
     $('#userScore').text(totalScore);
 
-    if (totalScore == randomNum) {
+    if (totalScore == magicNumber) {
         wins++;
         $('#wins').text('Wins: '+ wins);
-        alert("You Win!");
+        alert ("You Win!");
         reset();
 
-    }else if (totalScore > randomNum) {
+    }else if (totalScore > magicNumber) {
         losses++;
         $('#losses').text('Losses: ' + losses);
         alert("You Lose!");
         reset();
     }
 });
+
+//once user has either won or lost the game needs to reset
+function reset() {
+    numCrystals();
+    console.log(crystals, blue, red, white, yellow);
+    totalScore = 0;
+    $('#userScore').text(totalScore);
+    magicNumber = Math.floor((Math.random() * 100) + 19);
+    $('#magicNumber').text(magicNumber);
+}

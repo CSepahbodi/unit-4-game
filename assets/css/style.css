@@ -55,7 +55,6 @@ body {
 .scoreCard {
     width: 150px;
 	height: 70px;
-    background-color: burlywood;
     font-size: 25px;
 	margin-left: 160px;
 	padding-top: 6px;
@@ -73,25 +72,22 @@ img {
 
 #userScore {
     width: 150px;
-    background-color: burlywood;
     height: 70px;
-    font-size: 35px;
+    font-size: 50px;
     text-align: center;
     padding-top: 20px;
 }
 
 #totScore {
     width: 150px;
-    font-size: 25px;
-    background-color: burlywood;
+    font-size: 50px;
     margin: 10px 0px;
     padding: 5px 0px 5px 5px;
 }
 
 #magicNumber {
-    font-size: 35px;
+    font-size: 50px;
     color: white;
-    background-color: burlywood
     margin: 10px 0px;
     padding: 5px 0px 5px 5px;
 }
