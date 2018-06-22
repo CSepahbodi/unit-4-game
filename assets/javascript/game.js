@@ -18,23 +18,23 @@ magicNumber = Math.floor((Math.random() * 100) + 19);
 //numbers, wins and losses...
 $('#magicNumber').text(magicNumber);
 $('#userScore').text(totalScore);
-$('#wins').text('Wins: '+ wins);
-$('#losses').text('Losses: ' + losses);
+$('#win').text('Wins: '+ wins);
+$('#loss').text('Losses: ' + losses);
 
 //create the function that assigns a number for each of the crystals
 function numCrystals() {
-crystals = num.sort(function(a, b){return 0.5 - Math.random()});
+    crystals = num.sort(function(a, b){return 0.5 - Math.random()});
 
-blue = crystals[0];
-green = crystals[1];
-red = crystals[2];
-purple = crystals[3];
+    blue = crystals[0];
+    green = crystals[1];
+    red = crystals[2];
+    purple = crystals[3];
 
 //now it is time to assign a value to each crystal so that when clicked they put out a specific value
-$('#crystal1').attr('data-value', blue);
-$('#crystal2').attr('data-value', green);
-$('#crystal3').attr('data-value', red);
-$('#crystal4').attr('data-value', purple);
+    $('#crystal1').attr('data-value', blue);
+    $('#crystal2').attr('data-value', green);
+    $('#crystal3').attr('data-value', red);
+    $('#crystal4').attr('data-value', purple);
 }
 
 numCrystals();
