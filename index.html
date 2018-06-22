@@ -8,17 +8,17 @@
   </head>
   
   <body>
-        <!--This container is for the total contents of the game-->
+        <!--This div is for the total contents of the game-->
         <div class="gameCont">
 
-            <!--this card is for the header title-->
+            <!--this div is for the header title-->
             <div class="theDome">
                     <h1>Crystals Collector!</h1>
             </div>
             
-            <!--this card is for the directions-->
+            <!--this div is for the directions-->
             <div class="dirCont">
-                    <h2>Directions:</h2>
+                    <h2 class="dirHead">Directions:</h2>
                     <p class="directions">You will be given a random number at the start of the game.</p>
                     <p class="directions">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
                     <p class="directions">You win the game by matching your total score to random numbers, you lose the game if your total score goes above the random number.</p>
@@ -26,18 +26,18 @@
                     <p class="directions">Each time when the game starts, the game will change the values of each crystal.</p>
             </div>
 
-            <!--this card is for the Number to beat-->
+            <!--this div is for the Number to beat-->
             <div class="numberCont">
                     <h2 id="magicNumber">The Magic Number</h2>
             </div>
 
-            <!--this card is for the wins and losses counters-->
+            <!--this div is for the wins and losses counters-->
             <div class="scoreCard">
-                    <p>Wins:</p>
-                    <p>Losses:</p>
+                    <p id="Wins"></p>
+                    <p id="Losses"></p>
             </div>
 
-            <!--this card is for the game buttons-->
+            <!--this div is for the game buttons-->
             <div class="buttonCont">
                     <img class="crysButt" id="crystal1" src="assets/images/blu.png" alt="Blue Crystal">
                     <img class="crysButt" id="crystal2" src="assets/images/emerald.png" alt="Green Crystal">
@@ -45,14 +45,13 @@
                     <img class="crysButt" id="crystal4" src="assets/images/violet.png" alt="Blue Crystal">
             </div>
             
-            <!--This card is for the user's total score-->
+            <!--This div is for the user's total score-->
             <div class="totalScore">
-                    <h4>Your total score is:</h4>
+                    <p id="totScore">Your total score is:</p>
             </div>
 
-            <!--this card is to display the user's score-->
-            <div class="userScore">
-                0
+            <!--this div is to display the user's score-->
+            <div id="userScore">
             </div>
 
         </div>
